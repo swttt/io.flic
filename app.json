@@ -1,0 +1,34 @@
+{
+    "id": "io.flic",
+    "name": {
+        "en": "Flic Button"
+    },
+    "version": "0.0.1",
+    "compatibility": "0.x || 1.x",
+    "author": {
+        "name": "Bas Jansen",
+        "email": "bas@balotti.com"
+    },
+    "drivers": [{
+        "id": "flic-button",
+        "name": {
+            "en": "Flic Button"
+        },
+        "images": {
+            "large": "./drivers/chromecast/assets/images/large.jpg",
+            "small": "./drivers/chromecast/assets/images/small.jpg"
+        },
+        "class": "other",
+        "capabilities": [],
+        "pair": [{
+            "id": "list_flic",
+            "template": "list_devices",
+            "navigation": {
+                "next": "add_flic"
+            }
+        }, {
+            "id": "add_flic",
+            "template": "add_devices"
+        }]
+    }]
+}
